@@ -1,4 +1,4 @@
-﻿namespace InhertianceWithPerson
+﻿namespace InheritanceWithPerson
 {
     class Room
     {

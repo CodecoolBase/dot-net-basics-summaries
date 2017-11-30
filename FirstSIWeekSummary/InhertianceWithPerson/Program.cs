@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InhertianceWithPerson
+namespace InheritanceWithPerson
 {
     class Program
     {
