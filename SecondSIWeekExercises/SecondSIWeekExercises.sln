@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryCollection", "DictionaryCollection\DictionaryCollection.csproj", "{F62C1E79-CBB3-45F2-968A-958F83F1C3D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "GenericCollections\GenericCollections.csproj", "{533FCE07-9775-432F-8818-5931D94F84E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F62C1E79-CBB3-45F2-968A-958F83F1C3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62C1E79-CBB3-45F2-968A-958F83F1C3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62C1E79-CBB3-45F2-968A-958F83F1C3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533FCE07-9775-432F-8818-5931D94F84E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533FCE07-9775-432F-8818-5931D94F84E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533FCE07-9775-432F-8818-5931D94F84E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533FCE07-9775-432F-8818-5931D94F84E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
