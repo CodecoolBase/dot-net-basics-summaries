@@ -4,21 +4,10 @@ namespace InheritanceWithPerson
 {
     class Employee : Person, ICloneable
     {
-        private int _salary;
+        //Auto-property
+        public int Salary { get; set; }
 
-        public int Salary
-        {
-            get
-            {
-                return _salary;
-            }
-
-            set
-            {
-                _salary = value;
-            }
-        }
-
+        #region Full property with private field
         private string _profession;
 
         public string Profession
@@ -32,7 +21,8 @@ namespace InheritanceWithPerson
             {
                 _profession = value;
             }
-        }
+        } 
+        #endregion
 
         public Room Room;
 
@@ -43,14 +33,14 @@ namespace InheritanceWithPerson
 
         public Employee(string name, DateTime birthDate, int salary, string profession) : base(name, birthDate)
         {
-            this._salary = salary;
+            this.Salary = salary;
             this._profession = profession;
             Room = null;
         }
 
         public override string ToString()
         {
-            return base.ToString() + String.Format(", salary: {0}, profession: {1}, room: {2}", _salary, _profession, Room.Number);
+            return base.ToString() + $", salary: {Salary}, profession: {_profession}, room: {Room.Number}";
         }
 
         public object Clone()

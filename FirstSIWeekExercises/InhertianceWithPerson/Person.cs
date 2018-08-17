@@ -25,7 +25,7 @@ namespace InheritanceWithPerson
 
         public override string ToString()
         {
-            return String.Format("name: {0}, birthdate: {1}", this.Name, this.BirthDate);
+            return $"name: {this.Name}, birthdate: {this.BirthDate}";
         }
     }
 }

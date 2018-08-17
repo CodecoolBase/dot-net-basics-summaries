@@ -6,13 +6,13 @@ namespace SortString
     {
         static void Main(string[] args)
         {
-            string s = "Microsoft .NET Framework 2.0 Application Development Foundation";
-            string[] sa = s.Split(' ');
+            string text = "Microsoft .NET Framework 2.0 Application Development Foundation";
+            string[] splittedText = text.Split(' ');
 
-            Array.Sort(sa);
+            Array.Sort(splittedText);
 
-            s = string.Join(" ", sa);
-            Console.WriteLine(s);
+            text = string.Join(" ", splittedText);
+            Console.WriteLine(text);
             Console.ReadKey();
         }
     }
