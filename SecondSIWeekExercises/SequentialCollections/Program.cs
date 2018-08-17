@@ -6,7 +6,7 @@ namespace SequentialCollections
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Queue queue = new Queue();
             queue.Enqueue("First");
@@ -17,7 +17,7 @@ namespace SequentialCollections
             while (queue.Count > 0)
             {
                 object obj = queue.Dequeue();
-                Console.WriteLine("From Queue: {0}", obj);
+                Console.WriteLine($"From Queue: {obj}");
             }
 
             Console.WriteLine("------------------------");
@@ -31,7 +31,7 @@ namespace SequentialCollections
             while (stack.Count > 0)
             {
                 object obj = stack.Pop();
-                Console.WriteLine("From stack: {0}", obj);
+                Console.WriteLine($"From stack: {obj}");
             }
 
             Console.ReadKey();
