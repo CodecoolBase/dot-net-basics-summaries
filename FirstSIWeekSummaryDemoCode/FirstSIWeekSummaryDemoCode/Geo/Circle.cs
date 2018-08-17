@@ -2,25 +2,25 @@
 {
     public class Circle
     {
-        private double rad;
+        private double _radius;
 
-        public double Rad
+        public double Radius
         {
-            get { return rad; }
+            get { return _radius; }
             set
             {
                 if (value > 0)
-                    rad = value;
+                    _radius = value;
             }
         }
-        public Circle(double s)
+        public Circle(double radius)
         {
-            Rad = s;
+            Radius = radius;
         }
 
         public double Area()
         {
-            return 2 * 3.14 * Rad;
+            return 2 * System.Math.PI * Radius;
         }
     }
 }

@@ -2,14 +2,16 @@
 
 namespace FirstSIWeekSummaryDemoCode.Geo
 {
-    class BaseShape
+    public class BaseShape
     {
 
     }
 
-    class Triangle : BaseShape, IShape
+    public class Triangle : BaseShape, IShape
     {
-        private int _a, _b, _c;
+        private readonly int _a;
+        private readonly int _b;
+        private readonly int _c;
 
         public Triangle(int a, int b, int c)
         {

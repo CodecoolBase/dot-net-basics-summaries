@@ -1,6 +1,6 @@
 ﻿namespace FirstSIWeekSummaryDemoCode.Geo
 {
-    interface IShape
+    public interface IShape
     {
         double Range();
         double Area();

@@ -18,9 +18,10 @@ namespace FirstSIWeekSummaryDemoCode.Geo
 
         public abstract double Range();
         public abstract double Area();
-        public int CompareTo(object obj)
+
+        public int CompareTo(object polygonObj)
         {
-            var otherArea = ((Polygon)obj).Area();
+            var otherArea = ((Polygon)polygonObj).Area();
             return Area().CompareTo(otherArea);
         }
     }

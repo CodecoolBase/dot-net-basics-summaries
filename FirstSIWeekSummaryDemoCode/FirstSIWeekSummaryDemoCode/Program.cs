@@ -4,12 +4,13 @@ namespace FirstSIWeekSummaryDemoCode
 {
     public struct CoOrds
     {
-        public int X, Y;
+        public int X;
+        public int Y;
 
-        public CoOrds(int p1, int p2)
+        public CoOrds(int x, int y)
         {
-            X = p1;
-            Y = p2;
+            X = x;
+            Y = y;
         }
     }
 
@@ -32,17 +33,17 @@ namespace FirstSIWeekSummaryDemoCode
 
     class Program
     {
-        private int _data;
+        private readonly int _data;
 
         public string Name { get; set; }
 
         static void Main(string[] args)
         {
-            Nullable<bool> b = null;
-            bool? c = null;
+            Nullable<bool> nullableBool = null;
+            bool? anotherNullableBool = null;
 
-            Milk m = new Milk(15);
-            Console.WriteLine("My milk is: " + m.Capacity + " l");
+            Milk fifteenLitreMilk = new Milk(15);
+            Console.WriteLine($"My milk is: {fifteenLitreMilk.Capacity} l");
 
             ExtensionMethodDemo();
 
@@ -57,7 +58,7 @@ namespace FirstSIWeekSummaryDemoCode
             Console.WriteLine(result);
         }
 
-        public bool IsLEss(int treshold)
+        public bool IsLess(int treshold)
         {
             return this._data < treshold;
         }
